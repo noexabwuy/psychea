@@ -1,0 +1,14 @@
+# psychea plugin 0.1 - copy this file to ms0:/seplugins/psychea.ini (without the file the defaults below apply)
+# values: 0 or 1; '#' starts a comment. Unknown keys are ignored. Power-cycle the PSP after changing it.
+
+# --- what the plugin does (leave both at 1 to use the PC as the camera) ---
+xmb_camera=1       # 1 = the Camera item of the XMB works with the PC as the camera
+accessory_power=1  # 1 = games and the XMB accept the PC as a camera
+
+# --- what it writes to ms0:/psychea.log ---
+short_log=0        # 1 = short log: registration, attach/detach, patches, STAT lines, failed requests (use this for daily use)
+
+# --- research, keep 0 for daily use ---
+log_camera_calls=0 # 1 = log every sceUsbCam* call of games/XMB with its parameter structure
+photos_1280x960=0  # 1 = photos of the camera app are changed to 1280x960 (the picture is only enlarged from the webcam frame)
+dump_modules=0     # 1 = dump sceUSB_Driver / camera_plugin to ms0:/dump/ (writes files on the card)
